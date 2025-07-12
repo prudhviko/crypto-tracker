@@ -10,7 +10,11 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://crypto-tracker-cyan-gamma.vercel.app/",
+  })
+);
 app.use(express.json());
 app.use(morgan("dev"));
 app.use("/api/v1", coinRoutes);
