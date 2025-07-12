@@ -1,5 +1,5 @@
 import React from "react";
-import type { Coin } from "../hooks/useCoins";
+import type { Coin } from "../api/coins";
 
 interface Props {
   coins: Coin[];
