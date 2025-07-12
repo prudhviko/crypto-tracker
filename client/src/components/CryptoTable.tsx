@@ -21,7 +21,7 @@ const CryptoTable: React.FC<Props> = ({ coins }) => {
         </thead>
         <tbody>
           {coins.map((coin) => (
-            <tr key={coin.coinId} className="border-t">
+            <tr className="border-t">
               <td className="px-4 py-2">{coin.name}</td>
               <td className="px-4 py-2 uppercase">{coin.symbol}</td>
               <td className="px-4 py-2">${coin.priceUsd.toLocaleString()}</td>
